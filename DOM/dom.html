@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Book List</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+
     <link rel="stylesheet" href="./dom.css" />
   </head>
   <body>
@@ -23,9 +25,12 @@
         <input type="text" id="search-bar" placeholder=" Search for a book" />
         <button id="search-book" onclick="searchBook()">Search Book</button>
         <button id="add-book" onclick="addBook()">Add Book</button>
+        <button id="remove-book" onclick="removeBook()">Remove Last Book</button>
+
       </div>
 
       <ul id="book-list">
+
         <!-- Book items will be added here -->
       </ul>
     </div>

@@ -17,6 +17,11 @@ button{
   color: white;
 }
 
+#remove-book{
+  background-color: red;
+  color: white;
+}
+
 #openbook-section {
   /* background-color: aqua; */
   height: 100vh;
@@ -46,4 +51,19 @@ input{
 
 .highlight {
   background-color: yellow;
+}
+
+
+.favorite-icon {
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.favorite-icon i {
+  font-size: 1.5rem;
+
+}
+
+.favorite i {
+  color: red; /* Color for the heart icon when marked as favorite */
 }
