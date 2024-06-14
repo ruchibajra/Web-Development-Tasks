@@ -83,3 +83,16 @@ function removeBook() {
   }
 }
 
+// Question 5: Clear Search Highlights
+// Write a function clearSearchHighlights() that resets the background color of all li elements in
+// the ul with the ID book-list to their default state.
+
+function clearHighlights(){
+    const books = document.querySelectorAll("#book-list li");
+
+    books.forEach(book => {
+        book.classList.remove("highlight");
+    })
+
+}
+
