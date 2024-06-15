@@ -7,7 +7,8 @@ body {
   background-color: rgb(236, 236, 236);
 }
 
-#logo {
+
+#title-logo {
   font-size: 25px;
   padding-right: 5px;
   /* background-color: aqua; */
@@ -30,9 +31,10 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20px; 
+  padding: 0 20px;
 }
- #brand-title {
+#brand-title {
+    /* background-color: red; */
   display: flex;
   text-align: center;
   align-items: center;
@@ -40,6 +42,7 @@ h3 {
 
 /* Basic styles for the search bar */
 #search-bar {
+    /* background-color: pink; */
   display: flex;
   align-items: center;
   border: 1px solid gray;
@@ -76,10 +79,15 @@ h3 {
 }
 
 #user-info-bar {
-  width: 200px;
+    /* background-color: red; */
+  /* width: 200px; */
   justify-content: space-evenly;
   display: flex;
   align-items: center;
+}
+
+#user-info-bar i{
+    padding-right: 5px;
 }
 
 #user-info-bar img {
@@ -87,7 +95,81 @@ h3 {
   width: 30px;
   background-size: cover;
   border-radius: 50%;
+  padding-right: 5px;
 }
 
+/* nav side bar start */
 
+.nav-side-container{
+    margin-top: 20px;
+}
 
+#nav-side-bar {
+  height: 100vh;
+  background-color:white;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-option {
+  height: 30px;
+  /* background-color: pink; */
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  display: flex;
+  align-items: center;      
+  padding-left: 20px;
+  padding-top: 20px;
+
+}
+
+.nav-option i{
+    padding-right: 10px;
+}
+
+@media (max-width: 750px){
+
+    #brand-title h1{
+        font-size: 12px;
+    }
+
+    #nav-side-bar{
+        width: 50px;
+    }
+
+    #nav-side-bar span{
+        display: none;
+    }
+
+    #user-details,h2, h3{
+        display: none;
+        width: auto;
+    }
+
+}
+
+@media (max-width: 530px){
+   h1{
+       
+            display: none;
+        
+    }
+
+    #search-bar{
+        /* background-color: royalblue; */
+        width: 200px;
+        height: 20px;
+    }
+
+    #search-bar i {
+        margin-right: 0px;
+        color: grey;
+      }
+
+      #search-bar input {
+        width: 100px;
+      }
+}
