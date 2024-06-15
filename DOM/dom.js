@@ -33,7 +33,6 @@ function addBook() {
         icon.classList.add("favorite-icon");
         icon.innerHTML = '<i class="ri-heart-line"></i>';
         icon.addEventListener("click", toggleFavorite);
-
         li.appendChild(icon);
         ul.appendChild(li);
     }

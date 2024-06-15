@@ -1,83 +1,117 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>The Haven Book</title>
-        <link
-        href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
-        rel="stylesheet"
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Haven Book</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../THE HAVEN BOOK/book.css" />
+  </head>
+  <body>
+    <!-- nav bar section start -->
+    <div id="navbar-section">
+      <!-- logo -->
+      <div id="brand-title">
+        <i id="title-logo" class="ri-book-open-fill"></i>
+        <h1>The Haven Book</h1>
+      </div>
+
+      <!-- search bar -->
+      <div id="search-bar">
+        <i class="ri-search-line"></i>
+        <input type="text" id="search" placeholder="Search your book" />
+      </div>
+
+      <!-- info section -->
+      <div id="user-info-bar">
+        <i class="ri-notification-2-line"></i>
+        <img
+          src="https://i.pinimg.com/736x/62/fa/b8/62fab86fd4c71e25f9cc22d385c0e9af.jpg"
+          alt=""
         />
-        <link rel="stylesheet" href="../THE HAVEN BOOK/book.css" />
-    </head>
-    <body>
-        <!-- nav bar section start -->
-        <div id="navbar-section">
-        <!-- logo -->
-        <div id="brand-title">
-            <i id="title-logo" class="ri-book-open-fill"></i>
-            <h1>The Haven Book</h1>
-        </div>
 
-        <!-- search bar -->
-        <div id="search-bar">
-            <i class="ri-search-line"></i>
-            <input type="text" id="search" placeholder="Search your book" />
+        <div id="user-details">
+          <h2>Sonika Maharjan</h2>
+          <h3>Admin</h3>
         </div>
+      </div>
+    </div>
+    <!-- nav bar section end -->
 
-        <!-- info section -->
-        <div id="user-info-bar">
-            <i class="ri-notification-2-line"></i>
-            <img
-            src="https://i.pinimg.com/736x/62/fa/b8/62fab86fd4c71e25f9cc22d385c0e9af.jpg"
-            alt=""
-            />
-
-            <div id="user-details">
-            <h2>Sonika Maharjan</h2>
-            <h3>Admin</h3>
-            </div>
-        </div>
-        </div>
-
-        <div id="nav-side-bar">
+    <div id="main-page">
+      <div id="nav-side-bar">
         <ul>
-            <li>
+          <li>
             <a href="#" class="nav-option">
-                <i class="ri-home-5-line"></i>
-                <span>Dashboard</span></a
+              <i class="ri-home-5-line"></i>
+              <span>Dashboard</span></a
             >
-            </li>
-            <li>
+          </li>
+          <li>
             <a href="#" class="nav-option">
-                <i class="ri-group-line"></i>
-                <span>People Management</span></a
+              <i class="ri-group-line"></i>
+              <span>People Management</span></a
             >
-            </li>
-            <li>
+          </li>
+          <li>
             <a href="#bookmanagement-section" class="nav-option">
-                <i class="ri-book-marked-line"></i>
-                <span>Book Management</span></a
+              <i class="ri-book-marked-line"></i>
+              <span>Book Management</span></a
             >
-            </li>
-            <li>
+          </li>
+          <li>
             <a href="#" class="nav-option">
-                <i class="ri-file-chart-line"></i><span>Reports</span></a
+              <i class="ri-file-chart-line"></i><span>Reports</span></a
             >
-            </li>
-            <li>
+          </li>
+          <li>
             <a href="#" class="nav-option">
-                <i class="ri-equalizer-line"></i><span>Settings</span></a
+              <i class="ri-equalizer-line"></i><span>Settings</span></a
             >
-            </li>
+          </li>
         </ul>
-        <!-- navbar section end -->
+      </div>
 
+      <div id="bookmanagement-section">
+        <!-- <img src="https://images.unsplash.com/photo-1527908290749-8c9518e0db09?q=80&w=2075&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""> -->
 
-        <!-- hero page of book management section START -->
-        <!-- hero page of book management section END -->
+        <img
+          src="https://images.unsplash.com/photo-1588581939864-064d42ace7cd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="bookstore-img"
+        />
 
+        <div id="book-fn-section">
+          <div id="btn">
+            <button class="btn-add-book" onclick="addBook()">
+              <i class="ri-add-circle-line"></i> <br />
+              Add Book
+            </button>
+
+            <button class="btn-remove-book" onclick="removeBook()">
+              <i class="ri-add-circle-line"></i> <br />
+              Remove Last Book
+            </button>
+
+            <button class="btn-clear-highlights" onclick="clearHighlights()">
+              <i class="ri-add-circle-line"></i> <br />
+              Clear Highlights
+            </button>
+          </div>
+
+          <ol id="book-list">
+            <li>Anna Karenina by Leo Tolstoy</li>
+            <li>Madame Bovary by Gustave Flaubert</li>
+            <li>War and Peace by Leo Tolstoy</li>
+            <li>The Great Gatsby by F. Scott Fitzgerald</li>
+            <li>Lolita by Vladimir Nabokov</li>
+          </ol>
         </div>
-        <script src="../THE HAVEN BOOK/book.js"></script>
-    </body>
-    </html>
+      </div>
+    </div>
+
+    <script src="../THE HAVEN BOOK/book.js"></script>
+  </body>
+</html>
