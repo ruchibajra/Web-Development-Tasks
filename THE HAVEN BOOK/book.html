@@ -21,8 +21,13 @@
 
       <!-- search bar -->
       <div id="search-bar">
-        <i class="ri-search-line"></i>
-        <input type="text" id="search" placeholder="Search your book" />
+        <div class="search-input">
+          <i class="ri-search-line"></i>
+          <input type="text" id="search" placeholder="Search your book" />
+        </div>
+        <div class="btn-search">
+          <button id="search-book" onclick="searchBook()">Search</button>
+        </div>
       </div>
 
       <!-- info section -->
@@ -91,23 +96,17 @@
             </button>
 
             <button class="btn-remove-book" onclick="removeBook()">
-              <i class="ri-add-circle-line"></i> <br />
+              <i class="ri-delete-bin-2-line"></i> <br />
               Remove Last Book
             </button>
 
             <button class="btn-clear-highlights" onclick="clearHighlights()">
-              <i class="ri-add-circle-line"></i> <br />
+              <i class="ri-bookmark-2-line"></i> <br />
               Clear Highlights
             </button>
           </div>
 
-          <ol id="book-list">
-            <li>Anna Karenina by Leo Tolstoy</li>
-            <li>Madame Bovary by Gustave Flaubert</li>
-            <li>War and Peace by Leo Tolstoy</li>
-            <li>The Great Gatsby by F. Scott Fitzgerald</li>
-            <li>Lolita by Vladimir Nabokov</li>
-          </ol>
+          <ol id="book-list"></ol>
         </div>
       </div>
     </div>

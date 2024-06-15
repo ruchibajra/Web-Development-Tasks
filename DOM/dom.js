@@ -31,7 +31,7 @@ function addBook() {
         // Add heart icon
         const icon = document.createElement("span");
         icon.classList.add("favorite-icon");
-        icon.innerHTML = '<i class="ri-heart-line"></i>';
+        icon.innerHTML = '<i class="ri-heart-line "></i>';
         icon.addEventListener("click", toggleFavorite);
         li.appendChild(icon);
         ul.appendChild(li);
