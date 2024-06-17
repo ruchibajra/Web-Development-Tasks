@@ -6,14 +6,13 @@
     <title>EVENT HANDLING</title>
     <link rel="stylesheet" href="../EVENT HANDLING/event.css" />
   </head>
-  <body>
-    <!-- btn click start -->
+  <body onload="onPageLoad()">
+    <!-- btn click START -->
     <button id="btn-click">Click button</button>
     <p id="demo"></p>
-    <!-- btn click end -->
+    <!-- btn click END -->
 
-
-    <!-- on change start -->
+    <!-- on change START -->
     <select name="text" id="onchange-select">
       <option value="red">Red</option>
       <option value="black">Black</option>
@@ -21,14 +20,15 @@
     </select>
 
     <p id="onchange-text"></p>
-    <!-- on change end -->
+    <!-- on change END -->
 
+    <!-- on mouse over START -->
+    <h1 id="mouse-on-text">Mouse over me !!!</h1>
+    <!-- on mouse over END -->
 
-    <!-- on mouse over start -->
-     <h1 id="mouse-on-text">Mouse over me !!!</h1>
-    <!-- on mouse over end -->
-
-
+    <!-- on key down & on key up START -->
+     <input type="text" name="on-key" id="on-key-input">
+    <!-- on key down & on key up END -->
 
     <script src="../EVENT HANDLING/event.js"></script>
   </body>

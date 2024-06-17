@@ -5,7 +5,7 @@ let btnClick = document.getElementById("btn-click");
 let demoPara = document.getElementById("demo");
 
 btnClick.addEventListener("click", () => {
-  demoPara.innerHTML = "you did it girlllll!!!!";
+  demoPara.innerHTML = "click event triggered!!!";
 });
 
 
@@ -15,7 +15,7 @@ let onchangeText = document.getElementById("onchange-text");
 
 onchangeSelect.addEventListener("change", () => {
   let selectedValue = onchangeSelect.value;
-  onchangeText.innerHTML =  'the selected option is : ' + selectedValue;
+  onchangeText.innerHTML =  '(onchange fn used) the selected option is : ' + selectedValue;
 });
 
 
@@ -32,6 +32,24 @@ function mouse_over_fn(){
 function mouse_out_fn(){
     mouseOnText.style.color = 'black';
 }
+
+// ON JEY UP & ON KEY DOWN
+let onKeyInput = document.getElementById('on-key-input');
+
+onKeyInput.addEventListener('keydown', () => {
+    onKeyInput.style.backgroundColor = 'red';
+});
+
+onKeyInput.addEventListener('keyup', () =>{
+    onKeyInput.style.backgroundColor = 'purple';
+});
+
+
+// ON LOAD
+function onPageLoad(){
+    alert('the page is loaded');
+}
+
 
 
 
