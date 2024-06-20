@@ -21,3 +21,15 @@ function moveCarousel(direction) {
         behavior: 'smooth'
     });
 }
+
+
+function myFunction() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+
+    var darkNav = document.getElementById('nav-tag');
+    darkNav.classList.toggle("dark-nav");
+
+    var darkNav = document.getElementById('footer-tag');
+    darkNav.classList.toggle("dark-footer");
+ }
