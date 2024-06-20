@@ -60,7 +60,7 @@ ul li a:hover {
 }
 
 h2 {
-  margin-left: 10px;
+text-align: center;
 }
 
 .carousel-container {
@@ -74,7 +74,7 @@ h2 {
 .card-container {
   display: flex;
   overflow: hidden;
-  width: 80%;
+  width: 90%;
   scroll-behavior: smooth;
 }
 
