@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dark Mode</title>
+    <link rel="stylesheet" href="./darkmode.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">PRETTYCLICK</label>
+
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Courses</a></li>
+        <li><a href="#">Contact us</a></li>
+      </ul>
+
+      <i id="dark" class="ri-moon-line"></i>
+    </nav>
+
+    <h2>New Arrivals</h2>
+
+    <div class="carousel-container">
+      <button class="prev" onclick="moveCarousel(-1)">&#10094;</button>
+      <div class="card-container">
+        <div class="card">
+          <img
+            src="https://prettyclickcosmetics.com/cdn/shop/files/a4010bd29843a59c90fd5b6ecd5e1017.webp?v=1717735740&width=360"
+            alt=""
+          />
+          <span>LA Girl Rosy Glow Blush</span>
+          <h3>Rs.1450.00</h3>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://prettyclickcosmetics.com/cdn/shop/files/a4010bd29843a59c90fd5b6ecd5e1017.webp?v=1717735740&width=360"
+            alt=""
+          />
+          <span>LA Girl Rosy Glow Blush</span>
+          <h3>Rs.1450.00</h3>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://prettyclickcosmetics.com/cdn/shop/files/a4010bd29843a59c90fd5b6ecd5e1017.webp?v=1717735740&width=360"
+            alt=""
+          />
+          <span>LA Girl Rosy Glow Blush</span>
+          <h3>Rs.1450.00</h3>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://prettyclickcosmetics.com/cdn/shop/files/a4010bd29843a59c90fd5b6ecd5e1017.webp?v=1717735740&width=360"
+            alt=""
+          />
+          <span>LA Girl Rosy Glow Blush</span>
+          <h3>Rs.1450.00</h3>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://prettyclickcosmetics.com/cdn/shop/files/a4010bd29843a59c90fd5b6ecd5e1017.webp?v=1717735740&width=360"
+            alt=""
+          />
+          <span>LA Girl Rosy Glow Blush</span>
+          <h3>Rs.1450.00</h3>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://prettyclickcosmetics.com/cdn/shop/files/a4010bd29843a59c90fd5b6ecd5e1017.webp?v=1717735740&width=360"
+            alt=""
+          />
+          <span>LA Girl Rosy Glow Blush</span>
+          <h3>Rs.1450.00</h3>
+        </div>
+      </div>
+      <button class="next" onclick="moveCarousel(1)">&#10095;</button>
+
+      
+
+    </div>
+
+    <footer>
+        <div class="footer-content">
+          <div class="footer-section about">
+            <!-- <h2>About Us</h2> -->
+            <p>PrettyClick Cosmetics offers a wide range of beauty products to enhance your natural beauty. Discover our latest collections and enjoy quality cosmetics at affordable prices.</p>
+          </div>
+          
+          <div class="footer-section contact">
+            <!-- <h2>Contact Us</h2> -->
+            <p>Email: info@prettyclickcosmetics.com</p>
+            <p>Phone: +123-456-7890</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          &copy; 2024 PrettyClick Cosmetics 
+        </div>
+      </footer>
+      
+
+
+
+    <script src="./darkmode.js"></script>
+
+  </body>
+</html>

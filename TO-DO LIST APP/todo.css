@@ -12,7 +12,7 @@
   background: linear-gradient(
     90deg,
     rgba(170, 46, 11, 1) 11%,
-    rgba(255, 142, 23, 1) 93%
+    /* rgba(255, 142, 23, 1) 93% */
   );
   display: flex;
   justify-content: center;

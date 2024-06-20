@@ -60,8 +60,8 @@ ul li a:hover {
     position: fixed;
     top: 80px;
     right: -100%;
-    background-color: green;
-    width: 100%;
+    background-color: brown;
+    width: 50%;
     height: 100vh;
     display: flex;
     flex-direction: column;
